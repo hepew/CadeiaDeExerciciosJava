@@ -1,0 +1,132 @@
+------------------PARTE 1----------------------------
+DESAFIO 1 — Melhor Loja do Mês
+String[] lojas = {"Centro", "Shopping", "Bairro", "Outlet"};
+double[] faturamento = {50000, 80000, 80000, 60000};
+int[] reclamacoes = {5, 8, 3, 2};
+
+Critérios:
+1️⃣ Maior faturamento
+2️⃣ Se empatar → Menor número de reclamações
+Retorne o índice da melhor loja.
+
+DESAFIO 2 — Melhor Aluno Geral
+String[] alunos = {"Lucas", "Fernanda", "Rafael", "Bruna"};
+        double[] media = {8.5, 9.0, 9.0, 8.0};
+                int[] faltas = {2, 1, 1, 0};
+            int[] participacao = {7, 8, 6, 9};
+
+Critérios:
+1️⃣ Maior média
+2️⃣ Se empatar → Menor número de faltas
+3️⃣ Se ainda empatar → Maior participação
+Retorne o índice.
+
+DESAFIO 3 — Melhor Carro Custo-Benefício
+String[] carros = {"Modelo A", "Modelo B", "Modelo C", "Modelo D"};
+double[] preco = {70000, 90000, 90000, 85000};
+double[] consumo = {12.0, 10.0, 12.0, 14.0}; // km por litro
+int[] garantia = {3, 5, 4, 3}; // anos
+
+Critérios:
+1️⃣ Maior consumo
+2️⃣ Se empatar → Maior garantia
+3️⃣ Se ainda empatar → Menor preço
+Retorne o índice.
+
+DESAFIO 4 — Paciente Mais Urgente
+String[] pacientes = {"João", "Maria", "Pedro", "Carla"};
+int[] risco = {4, 5, 5, 5};
+int[] dor = {6, 3, 8, 8};
+int[] idade = {60, 40, 70, 65};
+
+Critérios:
+1️⃣ Maior risco
+2️⃣ Se empatar → Maior nível de dor
+3️⃣ Se ainda empatar → Maior idade
+Retorne o índice.
+
+DESAFIO 5 — Funcionário Destaque Anual
+String[] funcionarios = {"Ana", "Carlos", "Marcos", "Julia"};
+int[] produtividade = {90, 95, 95, 95};
+int[] projetosEntregues = {5, 6, 6, 4};
+int[] atrasos = {1, 0, 2, 0};
+
+Critérios:
+1️⃣ Maior produtividade
+2️⃣ Se empatar → Maior número de projetos entregues
+3️⃣ Se ainda empatar → Menor número de atrasos
+Retorne o índice.
+
+------------------PARTE 2----------------------------
+🏦 DESAFIO 1 — Agência Bancária do Ano
+String[] agencias = {"Centro", "Zona Sul", "Zona Norte", "Interior"};
+double[] lucro = {200000, 300000, 300000, 300000};
+int[] clientesAtivos = {500, 450, 500, 500};
+int[] reclamacoes = {10, 5, 5, 3};
+double[] custoOperacional = {100000, 150000, 140000, 130000};
+
+Critérios:
+1️⃣ Maior lucro
+2️⃣ Se empatar → Maior número de clientes ativos
+3️⃣ Se empatar → Menor número de reclamações
+4️⃣ Se empatar → Menor custo operacional
+Retorne o índice.
+
+🧠 DESAFIO 2 — Melhor Produto Estratégico
+String[] produtos = {"A", "B", "C", "D"};
+double[] custo = {50, 40, 50, 50};
+double[] preco = {100, 90, 100, 100};
+int[] vendidos = {100, 200, 100, 100};
+int[] devolvidos = {5, 10, 2, 5};
+
+Calcule dentro do loop:
+lucroReal = (preco - custo) * (vendidos - devolvidos)
+taxaDevolucao = devolvidos / vendidos
+Critérios:
+1️⃣ Maior lucroReal
+2️⃣ Se empatar → Menor taxaDevolucao
+3️⃣ Se empatar → Maior preço
+Retorne o índice.
+
+🏥 DESAFIO 3 — Prioridade Hospitalar Complexa
+String[] pacientes = {"João", "Maria", "Pedro", "Carla", "Bruno"};
+int[] risco = {5, 5, 5, 4, 5};
+int[] dor = {7, 9, 9, 10, 9};
+int[] idade = {60, 30, 80, 90, 80};
+int[] tempoEspera = {20, 50, 50, 5, 50};
+
+Critérios:
+1️⃣ Maior risco
+2️⃣ Se empatar → Maior dor
+3️⃣ Se empatar → Maior tempo de espera
+4️⃣ Se empatar → Maior idade
+Retorne o índice.
+
+🎓 DESAFIO 4 — Bolsa de Estudos
+String[] alunos = {"Lucas", "Fernanda", "Rafael", "Bruna"};
+double[] nota1 = {9.0, 9.0, 8.5, 9.0};
+double[] nota2 = {8.0, 9.0, 9.0, 9.0};
+int[] rendaFamiliar = {3000, 5000, 2000, 3000};
+int[] faltas = {1, 0, 2, 0};
+
+Calcule:
+media = (nota1 + nota2) / 2
+Critérios:
+1️⃣ Maior média
+2️⃣ Se empatar → Menor renda familiar
+3️⃣ Se empatar → Menor número de faltas
+Retorne o índice.
+
+🚀 DESAFIO 5 — CEO do Ano (Nível Máximo)
+String[] ceos = {"A", "B", "C", "D"};
+double[] crescimentoEmpresa = {10.5, 12.0, 12.0, 12.0};
+double[] lucroLiquido = {5_000_000, 4_000_000, 5_000_000, 5_000_000};
+int[] anosNoCargo = {3, 5, 4, 4};
+double[] satisfacaoFuncionarios = {8.0, 9.0, 8.0, 8.5};
+
+Critérios:
+1️⃣ Maior crescimento da empresa
+2️⃣ Se empatar → Maior lucro líquido
+3️⃣ Se empatar → Maior satisfação dos funcionários
+4️⃣ Se empatar → Maior tempo no cargo
+Retorne o índice.

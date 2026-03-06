@@ -1,0 +1,225 @@
+------------------PARTE 1----------------------------
+🧠 DESAFIO 1 — Empresa Mais Estável (Diferença Percentual)
+String[] empresas = {"A", "B", "C", "D"};
+double[] lucroAno1 = {100000, 200000, 150000, 100000};
+double[] lucroAno2 = {110000, 260000, 180000, 130000};
+double[] divida = {50000, 100000, 40000, 20000};
+int[] funcionarios = {50, 80, 40, 30};
+
+Calcule:
+crescimentoPercentual = ((lucroAno2 - lucroAno1) / lucroAno1) * 100
+indiceEstabilidade = crescimentoPercentual - (divida / 10000)
+a
+Regras:
+1️⃣ Maior índiceEstabilidade
+2️⃣ Se diferença entre dois índices for menor que 2% → escolher o de menor dívida
+3️⃣ Se ainda empatar → menor número de funcionários
+Você precisa comparar diferença percentual, não só igualdade.
+
+Retorne o índice
+🔥 DESAFIO 2 — Produto com Vantagem Real
+String[] produtos = {"A", "B", "C", "D"};
+double[] vendas = {10000, 10000, 9500, 10000};
+double[] devolucoes = {500, 300, 200, 300};
+double[] avaliacao = {4.5, 4.8, 4.8, 4.7};
+double[] custo = {50, 60, 55, 60};
+
+Calcule:
+taxaConversao = (vendas - devolucoes) / vendas
+score = (taxaConversao * 5) + avaliacao - (custo / 100)
+
+Regras:
+1️⃣ Maior score
+2️⃣ Se diferença de score < 0.3 → escolher maior taxaConversao
+3️⃣ Se ainda empatar → maior avaliação
+Retorne o índice.
+Agora você precisa comparar margem de diferença.
+
+🏥 DESAFIO 3 — Prioridade com Penalidade Dinâmica
+String[] pacientes = {"A", "B", "C", "D"};
+int[] risco = {5, 5, 4, 5};
+int[] idade = {60, 30, 90, 70};
+int[] tempoEspera = {20, 50, 40, 50};
+boolean[] fumante = {true, false, true, false};
+
+Calcule:
+prioridade = risco * 3 + tempoEspera
+Mas:
+⚠️ Se for fumante → reduzir prioridade em 5 pontos.
+
+Regras:
+1️⃣ Maior prioridade
+2️⃣ Se empatar → maior idade
+3️⃣ Se ainda empatar → maior risco
+Retorne o índice.
+Aqui você tem penalidade condicional antes da comparação.
+
+🚀 DESAFIO 4 — Startup com Eficiência Relativa
+String[] startups = {"A", "B", "C", "D"};
+double[] receita = {1_000_000, 1_000_000, 900_000, 1_000_000};
+double[] custo = {800_000, 750_000, 600_000, 700_000};
+double[] investimento = {300_000, 200_000, 250_000, 200_000};
+int[] clientes = {10000, 8000, 9000, 8000};
+
+Calcule:
+margem = receita - custo
+eficienciaInvestimento = margem / investimento
+receitaPorCliente = receita / clientes
+
+Regras:
+1️⃣ Maior eficienciaInvestimento
+2️⃣ Se empatar → maior receitaPorCliente
+3️⃣ Se diferença entre receitaPorCliente < 5 → menor investimento
+Retorne o índice.
+Agora você tem comparação com margem de tolerância.
+
+🧠💣 DESAFIO 5 — Seleção Ultra Estratégica
+String[] candidatos = {"A", "B", "C", "D"};
+double[] tecnica = {9, 9, 8.5, 9};
+double[] comportamental = {8, 9, 9, 9};
+int[] experiencia = {2, 3, 3, 4};
+int[] atrasos = {0, 1, 0, 0};
+double[] expectativaSalarial = {4000, 5000, 4500, 4200};
+
+Calcule:
+media = (tecnica * 0.6) + (comportamental * 0.4)
+score = media + (experiencia * 0.3) - (atrasos * 0.5)
+
+Regras:
+1️⃣ Maior score
+2️⃣ Se diferença de score < 0.5 → escolher menor expectativa salarial
+3️⃣ Se ainda empatar → maior experiência
+4️⃣ Se ainda empatar → menor número de atrasos
+Retorne o índice.
+
+------------------PARTE 2----------------------------
+🏥 1️⃣ Hospital – Prioridade Inteligente de Cirurgia
+
+Crie um método:
+
+public static int prioridadeCirurgia(String pacientes[],
+                                     int risco[],
+                                     int dor[],
+                                     int tempoEspera[],
+                                     boolean diabetico[],
+                                     int idade[])
+
+String[] pacientes = {"Ana", "Bruno", "Carlos", "Daniela"};
+int[] risco = {8, 9, 7, 9};
+int[] dor = {7, 6, 8, 6};
+int[] tempoEspera = {20, 15, 25, 15};
+boolean[] diabetico = {false, true, false, false};
+int[] idade = {60, 55, 70, 65};
+📊 Score principal:
+score = (risco * 4) + (dor * 2) + tempoEspera
+
+⚖ Margem:
+Se a diferença de score for ≥ 10 → vence direto.
+🧩 Se diferença < 10:
+Diabético tem prioridade
+Maior idade
+Maior risco
+
+🚀 2️⃣ Investidores – Melhor Startup do Ano
+public static int melhorStartup(String nome[],
+                                double receita[],
+                                double custo[],
+                                double crescimento[],
+                                double investimento[],
+                                int clientes[])
+
+String[] nome = {"TechX", "Inova+", "GreenSoft", "DataPro"};
+double[] receita = {1_000_000, 950_000, 1_200_000, 980_000};
+double[] custo = {700_000, 600_000, 900_000, 650_000};
+double[] crescimento = {20, 25, 18, 22};
+double[] investimento = {300_000, 250_000, 400_000, 200_000};
+int[] clientes = {10000, 8500, 12000, 9000};
+
+📊 Score:
+lucro = receita - custo
+score = (lucro * 0.5) + (crescimento * 0.3) + (clientes * 0.0001)
+⚖ Margem:
+Diferença ≥ 50.000 → vence direto.
+🧩 Se diferença < 50.000:
+Menor investimento
+Maior crescimento
+Maior lucro
+
+🎓 3️⃣ Universidade – Bolsa de Estudos Premium
+public static int bolsaElite(String alunos[],
+                             double notaAcademica[],
+                             double notaProjeto[],
+                             int atividadesExtracurriculares[],
+                             int rendaFamiliar[],
+                             int faltas[])
+
+String[] alunos = {"Lucas", "Marina", "Pedro", "Juliana"};
+double[] notaAcademica = {8.5, 9.0, 8.8, 9.0};
+double[] notaProjeto = {9.0, 8.5, 9.2, 8.8};
+int[] atividadesExtracurriculares = {5, 4, 6, 3};
+int[] rendaFamiliar = {3000, 5000, 2500, 2800};
+int[] faltas = {2, 1, 0, 3};
+
+📊 Score:
+score = (notaAcademica * 0.5)
+      + (notaProjeto * 0.3)
+      + (atividadesExtracurriculares * 0.2)
+      - (faltas * 0.5)
+⚖ Margem:
+Diferença ≥ 5 → vence direto.
+🧩 Se diferença < 5:
+Menor renda familiar
+Maior nota acadêmica
+Menor número de faltas
+
+🏆 4️⃣ Clube Esportivo – Melhor Jogador da Temporada
+public static int melhorJogador(String jogadores[],
+                                int gols[],
+                                int assistencias[],
+                                int faltas[],
+                                int cartoesVermelhos[],
+                                int idade[])
+
+String[] jogadores = {"Rafael", "Thiago", "André", "Victor"};
+int[] gols = {20, 18, 22, 18};
+int[] assistencias = {10, 12, 8, 14};
+int[] faltas = {15, 10, 20, 12};
+int[] cartoesVermelhos = {1, 0, 2, 0};
+int[] idade = {28, 24, 30, 23};
+📊 Score:
+score = (gols * 4)
+      + (assistencias * 3)
+      - (faltas * 1)
+      - (cartoesVermelhos * 5)
+⚖ Margem:
+Diferença ≥ 8 → vence direto.
+🧩 Se diferença < 8:
+Menos cartões vermelhos
+Mais gols
+Menor idade
+
+🏢 5️⃣ Empresa – Promoção para Gerente
+public static int promocaoGerente(String funcionarios[],
+                                  double produtividade[],
+                                  double lideranca[],
+                                  int anosEmpresa[],
+                                  int advertencias[],
+                                  double salarioAtual[])
+
+String[] funcionarios = {"Carla", "Eduardo", "Fernanda", "Gabriel"};
+double[] produtividade = {8.5, 9.0, 8.8, 9.0};
+double[] lideranca = {8.0, 8.5, 9.0, 8.5};
+int[] anosEmpresa = {5, 3, 6, 4};
+int[] advertencias = {0, 1, 0, 0};
+double[] salarioAtual = {5000, 4800, 5200, 4900};
+📊 Score:
+score = (produtividade * 0.4)
+      + (lideranca * 0.4)
+      + (anosEmpresa * 0.2)
+      - (advertencias * 1.5)
+⚖ Margem:
+Diferença ≥ 3 → vence direto.
+🧩 Se diferença < 3:
+Menor salário atual
+Maior tempo de empresa
+Menos advertências

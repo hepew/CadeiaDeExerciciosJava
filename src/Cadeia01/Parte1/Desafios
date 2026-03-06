@@ -1,0 +1,101 @@
+------------------PARTE 1----------------------------
+DESAFIO 1 — Melhor Vendedor
+String[] vendedores = {"Ana", "Carlos", "Marcos", "Julia"};
+int[] vendas = {30, 45, 45, 20};
+double[] totalVendido = {5000, 7000, 6800, 3000};
+
+Critério:
+-Maior número de vendas
+-Se empatar → maior total vendido
+
+DESAFIO 2 — Produto que Dá Mais Lucro
+String[] produtos = {"Caneta", "Caderno", "Mouse", "Teclado"};
+double[] custo = {1.00, 10.00, 50.00, 90.00};
+double[] precoVenda = {2.50, 18.00, 80.00, 120.00};
+
+Crie um método que encontre o produto com maior lucro unitário.
+lucro = precoVenda - custo
+Retorne o índice.
+
+DESAFIO 3 — Atendimento Prioritário
+String[] clientes = {"João", "Maria", "Pedro", "Carla"};
+int[] idade = {25, 70, 30, 65};
+int[] urgencia = {3, 4, 5, 4};
+
+Encontre o cliente que deve ser atendido primeiro.
+Critério:
+-Maior urgência
+-Se empatar → maior idade
+
+DESAFIO 4 — Funcionário Destaque
+String[] funcionarios = {"Lucas", "Fernanda", "Rafael", "Bruna"};
+int[] produtividade = {80, 90, 90, 85};
+int[] faltas = {2, 1, 3, 0};
+
+Critério:
+-Maior produtividade
+-Se empatar → menor número de faltas
+Retorne o índice.
+
+DESAFIO 5 — Estoque Crítico
+String[] produtos = {"Arroz", "Feijão", "Macarrão", "Óleo"};
+int[] quantidade = {5, 20, 8, 3};
+double[] preco = {25.00, 8.00, 6.00, 10.00};
+
+Você deve encontrar o produto mais preocupante.
+Critério:
+-Menor quantidade
+-Se empatar → maior valor total em estoque
+valorTotal = quantidade * preco
+
+------------------PARTE 2----------------------------
+DESAFIO 1 — Produto Mais Problemático
+String[] produtos = {"Arroz", "Feijão", "Macarrão", "Óleo"};
+int[] quantidade = {5, 5, 8, 5};
+double[] preco = {25.00, teste.00, 6.00, 12.00};
+
+Critério:
+1️⃣ Menor quantidade
+2️⃣ Se empatar → MAIOR valor total (quantidade * preco)
+Retorne o índice.
+
+DESAFIO 2 — Funcionário Mais Caro
+String[] funcionarios = {"Ana", "Carlos", "Marcos", "Julia"};
+double[] salario = {3000, 4500, 4500, 2800};
+int[] faltas = {2, 5, 1, 0};
+Critério:
+1️⃣ Maior salário
+2️⃣ Se empatar → MENOR número de faltas
+Retorne o índice.
+
+DESAFIO 3 — Paciente Prioritário 2.0
+String[] pacientes = {"João", "Maria", "Pedro", "Carla"};
+int[] risco = {4, 5, 5, 3};
+int[] idade = {60, 40, 80, 90};
+
+Critério:
+1️⃣ Maior risco
+2️⃣ Se empatar → Maior idade
+Retorne o índice.
+
+DESAFIO 4 — Produto Mais Lucrativo
+String[] produtos = {"Mouse", "Teclado", "Monitor", "Headset"};
+double[] custo = {50, 80, 400, 120};
+double[] precoVenda = {80, 120, 650, 200};
+int[] quantidade = {10, 5, 3, 8};
+
+Critério:
+1️⃣ Maior lucro TOTAL
+lucroTotal = (precoVenda - custo) * quantidade
+Sem critério de desempate.
+Retorne o índice.
+
+DESAFIO 5 — Cliente Mais Importante
+String[] clientes = {"João", "Marina", "Carlos", "Fernanda"};
+double[] totalComprado = {5000, 7000, 7000, 3000};
+int[] anosCliente = {2, 1, 5, 10};
+
+Critério:
+1️⃣ Maior total comprado
+2️⃣ Se empatar → Maior tempo como cliente
+Retorne o índice.

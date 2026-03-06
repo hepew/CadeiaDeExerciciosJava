@@ -1,0 +1,137 @@
+------------------Desafio 2----------------------------
+🏥 Desafio Grande — Sistema de Triagem Hospitalar Avançado
+Você deve criar um método:
+
+public static int proximoPaciente(...)
+Esse método deve decidir qual paciente será atendido agora.
+
+📦 Arrays (20 arrays)
+Todos possuem o mesmo tamanho e cada posição representa um paciente.
+
+String nome[]
+int idade[]
+boolean vip[]
+
+double temperatura[]
+int batimentos[]
+int pressaoSistolica[]
+int pressaoDiastolica[]
+int saturacao[]
+
+boolean sangramento[]
+boolean inconsciente[]
+boolean dorPeito[]
+boolean faltaAr[]
+
+int tempoEsperaMin[]
+int prioridadeManual[]
+
+boolean chegouAmbulancia[]
+
+double peso[]
+double altura[]
+
+int historicoInternacoes[]
+boolean alergiaMedicamento[]
+
+boolean atendido[]
+🚑 Prioridades do Sistema
+Você deve classificar pacientes em 3 níveis.
+
+🔴 PRIORIDADE 3 (EMERGÊNCIA)
+Se qualquer condição for verdadeira:
+
+inconsciente
+saturacao < 90
+batimentos > 150
+pressaoSistolica > 180
+sangramento grave
+dorPeito + faltaAr
+chegouAmbulancia
+🟡 PRIORIDADE 2 (URGENTE)
+temperatura > 39
+batimentos > 120
+saturacao < 94
+dorPeito
+faltaAr
+tempoEsperaMin > 60
+🟢 PRIORIDADE 1 (NORMAL)
+Todos os outros.
+
+👑 Pacientes VIP
+Se dois pacientes tiverem mesma prioridade:
+
+1️⃣ VIP tem preferência
+2️⃣ Quem espera mais tempo ganha
+3️⃣ Quem tem mais idade ganha
+
+⏱ Limite de Atendimento por Hora
+Hospital só pode atender:
+
+10 pacientes por hora
+Você receberá:
+
+int atendidosNestaHora
+Se atingir 10:
+
+retornar -1
+🚫 Pacientes que NÃO podem ser escolhidos
+Ignore pacientes que:
+
+atendido == true
+📊 Critério final de escolha
+Ordem de decisão:
+
+1️⃣ Maior prioridade
+2️⃣ VIP
+3️⃣ Maior tempo de espera
+4️⃣ Maior idade
+
+📥 Assinatura do Método
+public static int proximoPaciente(
+String nome[],
+int idade[],
+boolean vip[],
+double temperatura[],
+int batimentos[],
+int pressaoSistolica[],
+int pressaoDiastolica[],
+int saturacao[],
+boolean sangramento[],
+boolean inconsciente[],
+boolean dorPeito[],
+boolean faltaAr[],
+int tempoEsperaMin[],
+int prioridadeManual[],
+boolean chegouAmbulancia[],
+double peso[],
+double altura[],
+int historicoInternacoes[],
+boolean alergiaMedicamento[],
+boolean atendido[],
+int atendidosNestaHora
+)
+Retorne:
+
+índice do paciente escolhido
+ou
+
+-1 se não puder atender
+🧠 Desafios que você vai treinar
+Esse exercício trabalha:
+
+lógica grande
+
+vários arrays
+
+múltiplos critérios
+
+prioridade
+
+desempate complexo
+
+organização de código
+
+estrutura de decisão
+
+simulação de sistema real

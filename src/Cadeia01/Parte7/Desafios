@@ -1,0 +1,315 @@
+------------------PARTE 1----------------------------
+1️⃣ Melhor Clínica do Ano
+public static int melhorClinica(String nome[],
+                                double avaliacaoPacientes[],
+                                int numeroEspecialidades[],
+                                int tempoMedioEspera[],
+                                int reclamacoes[],
+                                double custoConsulta[])
+📊 Score
+score = (avaliacaoPacientes * 0.5)
+      + (numeroEspecialidades * 0.3)
+      - (tempoMedioEspera * 0.1)
+      - (reclamacoes * 0.4)
+⚖ Limite
+LIMITE = 1.5
+🧩 Desempate (< limite)
+1️⃣ Menor custoConsulta
+2️⃣ Menos reclamações
+3️⃣ Maior avaliação
+
+📦 Arrays
+String[] nome = {"Vida+", "SaudeMax", "ClinBem", "TotalCare"};
+double[] avaliacaoPacientes = {8.5, 9.0, 8.8, 9.1};
+int[] numeroEspecialidades = {10, 8, 12, 9};
+int[] tempoMedioEspera = {30, 20, 40, 25};
+int[] reclamacoes = {5, 3, 4, 2};
+double[] custoConsulta = {200, 250, 180, 220};
+
+🚗 2️⃣ Melhor Carro para Compra
+public static int melhorCarro(String modelo[],
+                              double consumo[],
+                              int potencia[],
+                              double preco[],
+                              int seguranca[],
+                              int manutencaoAnual[])
+📊 Score
+score = (consumo * 2)
+      + (potencia * 0.05)
+      + (seguranca * 1.5)
+      - (manutencaoAnual * 0.001)
+⚖ Limite
+LIMITE = 5
+🧩 Desempate
+1️⃣ Menor preço
+2️⃣ Maior segurança
+3️⃣ Maior potência
+
+📦 Arrays
+String[] modelo = {"X1", "TurboZ", "EcoDrive", "PowerMax"};
+double[] consumo = {14, 10, 16, 12};
+int[] potencia = {130, 180, 110, 160};
+double[] preco = {70000, 85000, 75000, 80000};
+int[] seguranca = {4, 5, 4, 5};
+int[] manutencaoAnual = {3000, 5000, 2500, 4000};
+
+🎮 3️⃣ Melhor Jogo do Ano
+public static int melhorJogo(String nome[],
+                             double notaCritica[],
+                             double notaPublico[],
+                             int vendas[],
+                             int bugsReportados[],
+                             int duracaoHoras[])
+📊 Score
+score = (notaCritica * 0.4)
+      + (notaPublico * 0.4)
+      + (vendas * 0.00001)
+      + (duracaoHoras * 0.1)
+      - (bugsReportados * 0.2)
+⚖ Limite
+LIMITE = 0.8
+🧩 Desempate
+1️⃣ Menos bugs
+2️⃣ Maior nota do público
+3️⃣ Mais vendas
+
+📦 Arrays
+String[] nome = {"BattleZone", "SkyWorld", "PixelHero", "DarkQuest"};
+double[] notaCritica = {8.5, 9.0, 8.8, 9.1};
+double[] notaPublico = {8.7, 8.9, 9.0, 8.8};
+int[] vendas = {500000, 600000, 450000, 550000};
+int[] bugsReportados = {30, 25, 20, 40};
+int[] duracaoHoras = {40, 35, 50, 45};
+
+🏨 4️⃣ Melhor Hotel para Turismo
+public static int melhorHotel(String nome[],
+                              double avaliacao[],
+                              int estrelas[],
+                              double precoDiaria[],
+                              int distanciaCentro[],
+                              int reclamacoes[])
+📊 Score
+score = (avaliacao * 0.6)
+      + (estrelas * 0.5)
+      - (precoDiaria * 0.002)
+      - (distanciaCentro * 0.1)
+      - (reclamacoes * 0.3)
+⚖ Limite
+LIMITE = 1.0
+🧩 Desempate
+1️⃣ Menor preço
+2️⃣ Menor distância
+3️⃣ Maior avaliação
+
+📦 Arrays
+String[] nome = {"LuxStay", "CityInn", "RoyalPalace", "ComfortLife"};
+double[] avaliacao = {8.8, 9.2, 8.5, 9.0};
+int[] estrelas = {4, 5, 4, 5};
+double[] precoDiaria = {400, 600, 350, 500};
+int[] distanciaCentro = {2, 1, 3, 2};
+int[] reclamacoes = {10, 5, 8, 6};
+
+🏭 5️⃣ Melhor Fábrica Sustentável
+public static int melhorFabrica(String nome[],
+                                double eficienciaEnergetica[],
+                                int producaoMensal[],
+                                int emissoesCO2[],
+                                int acidentesTrabalho[],
+                                double custoOperacional[])
+📊 Score
+score = (eficienciaEnergetica * 0.5)
+      + (producaoMensal * 0.01)
+      - (emissoesCO2 * 0.02)
+      - (acidentesTrabalho * 1.0)
+      - (custoOperacional * 0.0001)
+⚖ Limite
+LIMITE = 2
+🧩 Desempate
+1️⃣ Menos acidentes
+2️⃣ Menos emissões
+3️⃣ Maior eficiência
+
+📦 Arrays
+String[] nome = {"EcoSteel", "GreenMetal", "FutureIron", "CleanForge"};
+double[] eficienciaEnergetica = {85, 90, 88, 87};
+int[] producaoMensal = {10000, 9500, 11000, 10500};
+int[] emissoesCO2 = {300, 250, 400, 280};
+int[] acidentesTrabalho = {2, 1, 3, 1};
+double[] custoOperacional = {500000, 520000, 480000, 510000};
+
+------------------PARTE 2----------------------------
+🚀 DESAFIO 1 — Melhor Investimento
+public static int melhorInvestimento(String nome[],
+                                      double rendimentoAnual[],
+                                      double risco[],
+                                      double liquidezDias[],
+                                      double taxaAdm[])
+📊 Score
+score = (rendimentoAnual * 0.5)
+      - (risco * 0.2)
+      - (taxaAdm * 0.2)
+      - (liquidezDias * 0.1)
+🧠 Regras
+Retorne o índice do melhor investimento
+Se empatar no score → menor risco vence
+Se ainda empatar → menor taxaAdm vence
+Se ainda empatar → menor índice
+⚠️ Pegadinha: liquidezDias e taxaAdm são penalidades.
+
+String nomeInvest[] = {
+    "Tesouro Selic",
+    "CDB Banco X",
+    "LCI Premium",
+    "Fundo Alpha",
+    "Cripto Fundo"
+};
+double rendimentoAnual[] = {12.5, 13.2, 11.8, 14.0, 18.0};
+double risco[] = {1.2, 2.5, 1.0, 4.0, 8.5};
+double liquidezDias[] = {1, 30, 90, 15, 2};
+double taxaAdm[] = {0.2, 0.5, 0.3, 1.5, 2.0};
+
+DESAFIO 2 — Jogador Mais Completo
+public static int jogadorMaisCompleto(String nome[],
+                                       int gols[],
+                                       int assistencias[],
+                                       int desarmes[],
+                                       int jogos[],
+                                       int cartoesAmarelos[])
+📊 Índice de eficiência
+eficiencia = (gols * 4 + assistencias * 3 + desarmes * 2)
+             / jogos
+             - (cartoesAmarelos * 0.5)
+🧠 Regras
+Ignore jogadores com jogos == 0
+Maior eficiência vence
+Empate → mais jogos vence
+Empate → menos cartões vence
+Empate → menor índice
+⚠️ Pegadinha: divisão por zero e cálculo com double.
+
+String nomeJog[] = {
+    "Carlos",
+    "Bruno",
+    "Mateus",
+    "Rafael",
+    "Diego"
+};
+int gols[] = {10, 8, 15, 4, 7};
+int assistencias[] = {5, 10, 3, 12, 6};
+int desarmes[] = {20, 15, 5, 30, 18};
+int jogos[] = {20, 0, 25, 30, 20}; // ⚠️ Bruno deve ser ignorado
+int cartoesAmarelos[] = {3, 1, 5, 2, 4};
+⚠️ Pegadinha: jogador com jogos = 0
+
+🧩 DESAFIO 3 — Produto com Melhor Custo-Benefício REAL
+public static int melhorProduto(String nome[],
+                                double preco[],
+                                double qualidade[],
+                                double durabilidadeMeses[],
+                                int devolucoes[])
+📊 Score
+score = (qualidade * 0.5)
+      + (durabilidadeMeses * 0.3)
+      - (preco * 0.1)
+      - (devolucoes * 2)
+🧠 Regras
+Ignore produtos com qualidade <= 0
+Maior score vence
+Empate → menor preço vence
+Empate → maior durabilidade vence
+Empate → menor índice
+⚠️ Pegadinha: devoluções pesam MUITO.
+
+String nomeProd[] = {
+    "Fone X",
+    "Mouse Pro",
+    "Teclado Mec",
+    "Monitor HD",
+    "Webcam Plus"
+};
+double preco[] = {250, 180, 320, 900, 210};
+double qualidade[] = {8.5, 7.0, 9.0, 8.0, 0.0}; // ⚠️ Webcam deve ser ignorada
+double durabilidadeMeses[] = {24, 18, 36, 48, 12};
+int devolucoes[] = {2, 5, 1, 0, 3};
+⚠️ Pegadinhas:
+qualidade = 0
+devoluções pesadas
+
+🧠 DESAFIO 4 — Cidade Mais Sustentável
+public static int cidadeMaisSustentavel(String cidade[],
+                                         double energiaRenovavel[],
+                                         double areaVerde[],
+                                         double poluicao[],
+                                         double reciclado[])
+📊 Índice verde
+indice = (energiaRenovavel * 0.35)
+       + (areaVerde * 0.25)
+       + (reciclado * 0.25)
+       - (poluicao * 0.4)
+🧠 Regras
+Ignore cidades com poluicao < 0
+Maior índice vence
+Empate → menor poluição vence
+Empate → maior energiaRenovavel vence
+Empate → menor índice
+⚠️ Pegadinha: peso negativo grande.
+
+String cidade[] = {
+    "Cidade Verde",
+    "EcoVille",
+    "Poluópolis",
+    "Nova Esperança",
+    "BioCity"
+};
+double energiaRenovavel[] = {60, 75, 20, 55, 80};
+double areaVerde[] = {40, 35, 10, 50, 45};
+double poluicao[] = {30, 25, 90, 28, -5}; // ⚠️ BioCity deve ser ignorada
+double reciclado[] = {50, 65, 15, 45, 70};
+⚠️ Pegadinha: poluição negativa (inválida)
+
+💀 DESAFIO 5 — Melhor IA do Laboratório (NÍVEL HARD)
+public static int melhorIA(String nome[],
+                           double precisao[],
+                           double recall[],
+                           double latenciaMs[],
+                           double consumoMemoria[],
+                           int falhas[])
+📊 Score (tipo F1 customizado)
+Primeiro calcule:
+
+f1 = 2 * (precisao * recall) / (precisao + recall)
+Depois:
+
+score = (f1 * 0.6)
+      - (latenciaMs * 0.1)
+      - (consumoMemoria * 0.05)
+      - (falhas * 2)
+🧠 Regras
+Ignore IA com precisao + recall == 0
+Maior score vence
+Empate → maior f1 vence
+Empate → menor latencia vence
+Empate → menor índice
+
+⚠️ PEGADINHA BRABA:
+cálculo do F1
+divisão
+múltiplos critérios
+penalidades fortes
+
+String nomeIA[] = {
+    "VisionNet",
+    "DeepScan",
+    "SmartAI",
+    "QuickMind",
+    "ZeroBrain"
+};
+double precisao[] = {0.92, 0.88, 0.95, 0.60, 0.0};
+double recall[] = {0.90, 0.91, 0.40, 0.65, 0.0}; // ⚠️ ZeroBrain inválida
+double latenciaMs[] = {120, 150, 200, 80, 50};
+double consumoMemoria[] = {512, 450, 800, 300, 200};
+int falhas[] = {2, 1, 5, 0, 0};
+⚠️ Pegadinhas pesadas:
+precisao + recall == 0
+trade-off de F1
+latência vs qualidade

@@ -1,0 +1,161 @@
+------------------PARTE 1----------------------------
+🏢 DESAFIO 1 — Unidade Empresarial Mais Estratégica
+String[] unidades = {"Sul", "Norte", "Leste", "Oeste"};
+double[] faturamento = {500000, 500000, 500000, 450000};
+double[] lucro = {80000, 90000, 90000, 100000};
+int[] funcionarios = {50, 40, 45, 30};
+int[] processosJudiciais = {2, 3, 1, 0};
+
+Critérios:
+1️⃣ Maior faturamento
+2️⃣ Se empatar → Maior lucro
+3️⃣ Se empatar → Menor número de processos judiciais
+4️⃣ Se empatar → Menor número de funcionários
+Retorne o índice.
+
+💰 DESAFIO 2 — Investimento Mais Inteligente
+String[] investimentos = {"Ações", "Fundos", "Tesouro", "Cripto"};
+double[] retornoPercentual = {12.0, 12.0, 10.0, 12.0};
+double[] risco = {8.0, 5.0, 2.0, 9.0};
+int[] tempoMeses = {24, 36, 12, 18};
+double[] liquidez = {7.0, 9.0, 10.0, 6.0};
+
+Critérios:
+1️⃣ Maior retorno percentual
+2️⃣ Se empatar → Menor risco
+3️⃣ Se empatar → Maior liquidez
+4️⃣ Se empatar → Menor tempo de investimento
+Retorne o índice.
+
+🏥 DESAFIO 3 — Caso Médico Mais Crítico (Nível Difícil)
+String[] casos = {"Caso A", "Caso B", "Caso C", "Caso D"};
+int[] riscoVida = {5, 5, 5, 4};
+int[] dor = {8, 9, 9, 10};
+int[] chanceRecuperacao = {60, 50, 50, 80};
+int[] tempoInternado = {10, 20, 20, 5};
+
+Critérios:
+1️⃣ Maior risco de vida
+2️⃣ Se empatar → Maior dor
+3️⃣ Se empatar → Menor chance de recuperação
+4️⃣ Se empatar → Maior tempo internado
+Retorne o índice.
+
+🚗 DESAFIO 4 — Melhor Carro Premium
+String[] carros = {"A", "B", "C", "D"};
+double[] potencia = {200, 220, 220, 220};
+double[] consumo = {10, 9, 11, 11};
+double[] preco = {120000, 130000, 125000, 125000};
+int[] garantia = {3, 5, 4, 4};
+
+Critérios:
+1️⃣ Maior potência
+2️⃣ Se empatar → Maior consumo
+3️⃣ Se empatar → Maior garantia
+4️⃣ Se empatar → Menor preço
+Retorne o índice.
+
+🎓 DESAFIO 5 — Seleção Final de Candidato (Nível Entrevista Real)
+String[] candidatos = {"Ana", "Bruno", "Carlos", "Daniela"};
+double[] notaTecnica = {9.0, 9.0, 9.0, 8.5};
+double[] notaComportamental = {8.0, 9.0, 9.0, 10.0};
+int[] anosExperiencia = {2, 3, 3, 5};
+double[] pretensaoSalarial = {4000, 5000, 4500, 3000};
+
+Calcule:
+mediaFinal = (notaTecnica + notaComportamental) / 2
+
+Critérios:
+1️⃣ Maior média final
+2️⃣ Se empatar → Maior tempo de experiência
+3️⃣ Se empatar → Menor pretensão salarial
+Retorne o índice.
+
+------------------PARTE 2---------------------------
+DESAFIO 1 — Fundo de Investimento Supremo
+String[] fundos = {"Alpha", "Beta", "Gamma", "Delta"};
+double[] retornoAnual = {15.0, 15.0, 15.0, 14.5};
+double[] volatilidade = {8.0, 6.0, 6.0, 5.0};
+double[] patrimonio = {1_000_000, 2_000_000, 2_000_000, 3_000_000};
+int[] anosAtivo = {5, 4, 6, 10};
+double[] taxaAdministracao = {1.5, 1.2, 1.2, 1.0};
+
+Critérios:
+
+1️⃣ Maior retorno anual
+2️⃣ Se empatar → Menor volatilidade
+3️⃣ Se empatar → Maior patrimônio
+4️⃣ Se empatar → Maior tempo ativo
+5️⃣ Se empatar → Menor taxa de administração
+
+Retorne o índice.
+
+🏥 DESAFIO 2 — UTI Prioridade Máxima
+String[] pacientes = {"A", "B", "C", "D"};
+int[] riscoVida = {5, 5, 5, 5};
+int[] dor = {9, 9, 8, 9};
+int[] pressao = {18, 20, 22, 20};
+int[] idade = {60, 70, 80, 75};
+int[] tempoEspera = {30, 25, 40, 25};
+
+Critérios:
+
+1️⃣ Maior risco de vida
+2️⃣ Se empatar → Maior dor
+3️⃣ Se empatar → Maior pressão arterial
+4️⃣ Se empatar → Maior tempo de espera
+5️⃣ Se empatar → Maior idade
+
+Retorne o índice.
+
+🚀 DESAFIO 3 — Startup Mais Promissora
+String[] startups = {"X", "Y", "Z", "W"};
+double[] crescimentoUsuarios = {200, 200, 200, 180};
+double[] receita = {1_000_000, 1_000_000, 900_000, 1_200_000};
+double[] investimentoRecebido = {500_000, 400_000, 400_000, 600_000};
+int[] funcionarios = {20, 15, 15, 30};
+double[] churnRate = {5.0, 4.0, 4.0, 6.0};
+
+Critérios:
+
+1️⃣ Maior crescimento de usuários
+2️⃣ Se empatar → Maior receita
+3️⃣ Se empatar → Menor investimento recebido (mais eficiente)
+4️⃣ Se empatar → Menor churn rate
+5️⃣ Se empatar → Menor número de funcionários
+
+Retorne o índice.
+
+🎓 DESAFIO 4 — Seleção Militar Elite
+String[] candidatos = {"A", "B", "C", "D"};
+int[] resistencia = {90, 95, 95, 95};
+int[] tiro = {85, 88, 88, 88};
+int[] estrategia = {80, 85, 85, 90};
+int[] disciplina = {100, 95, 100, 100};
+int[] faltas = {0, 1, 0, 0};
+
+Critérios:
+
+1️⃣ Maior resistência
+2️⃣ Se empatar → Maior tiro
+3️⃣ Se empatar → Maior estratégia
+4️⃣ Se empatar → Maior disciplina
+5️⃣ Se empatar → Menor número de faltas
+
+Retorne o índice.
+
+🧠 DESAFIO 5 — Produto Mais Estratégico Global
+String[] produtos = {"A", "B", "C", "D"};
+double[] margemLucro = {30, 30, 30, 30};
+double[] vendas = {10_000, 10_000, 9_000, 10_000};
+double[] custoLogistico = {5_000, 4_000, 4_000, 4_000};
+double[] satisfacaoCliente = {8.5, 9.0, 9.0, 9.0};
+int[] devolucoes = {100, 80, 80, 60};
+
+Critérios:
+
+1️⃣ Maior margem de lucro
+2️⃣ Se empatar → Maior volume de vendas
+3️⃣ Se empatar → Menor custo logístico
+4️⃣ Se empatar → Maior satisfação do cliente
+5️⃣ Se empatar → Menor número de devoluções
